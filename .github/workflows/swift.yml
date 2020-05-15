@@ -10,7 +10,7 @@ jobs:
   build:
     name: Build
     env:
-      SCHEME: "Actions"
+      SCHEME: "swift-action-test"
       DEVICE: "iPhone 11"
       DERIVED_DATA_PATH: "DerivedData"
     runs-on: macos-latest
