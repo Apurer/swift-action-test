@@ -53,6 +53,7 @@ jobs:
   cleanup_job:
     name: Delete artifacts
     runs-on: macOS-latest
+    needs: [build, unit_test]
     steps:
     - name: call webhook to delete artifacts
       env:
