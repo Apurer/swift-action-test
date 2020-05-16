@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: Delete artifacts
       if: github.event.action == 'delete_all_artifacts'
-      uses: apurer/delete-actions-artifacts@v1
+      uses: Apurer/delete-actions-artifacts
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
