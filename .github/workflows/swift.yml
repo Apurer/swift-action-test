@@ -51,6 +51,7 @@ jobs:
         path: DerivedData/Logs/Test
 
   cleanup_job:
+    name: Delete artifacts
     runs-on: macOS-latest
     steps:
     - name: call webhook to delete artifacts
